@@ -1,0 +1,116 @@
+/* General */
+body {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Imagenes/banner.jpg') no-repeat center/cover;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #ff4d4d;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+nav a {
+    color: #ff4d4d;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Caja de información */
+.info-box {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+}
+
+.info-box h2 {
+    color: #ff4d4d;
+    border-bottom: 2px solid #ff4d4d;
+    padding-bottom: 8px;
+}
+
+/* Imágenes en la descripción */
+.description-img {
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+}
+
+/* Sección de cada juego */
+.game-section {
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+    margin: 20px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+}
+
+.game-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(255, 77, 77, 0.8);
+}
+
+.game-section img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.game-info {
+    padding: 20px;
+}
+
+.game-info h3 {
+    color: #ff4d4d;
+}
+
+/* Separador */
+.spacer {
+    height: 20px;
+}
+
+.steam-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #171a21;
+    border-radius: 80px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.steam-button img {
+    width: 90px;
+    margin-right: 10px;
+}

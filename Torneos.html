@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Assetto Corsa - Torneos</title>
+    <link rel="stylesheet" href="styleTorneo.css">
+</head>
+<body>
+    <header>
+        <h1>La Saga Assetto Corsa</h1>
+        <p>Explora la evolución del simulador de carreras más realista</p>
+        <nav>
+            <a href="index.html">Inicio</a> | <a href="assetto_corsa.html">Assetto Corsa</a> | <a href="competizione.html">Competizione</a> | <a href="evo.html">Assetto Corsa Evo </a> | <a href="Torneos.html">Torneos</a>
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <h2>Torneos de Assetto Corsa Competizione</h2>
+        <p>Assetto Corsa Competizione es conocido por sus intensos torneos a nivel mundial. Aquí puedes conocer las principales categorías y registrarte para competir.</p>
+
+        <!-- Lista Ordenada -->
+        <h3>Categorías de Carreras</h3>
+        <ol>
+            <li>GT3 Series</li>
+            <li>GT4 Series</li>
+            <li>Endurance Cup</li>
+            <li>Intercontinental GT Challenge</li>
+            <li>Campeonato de SimRacing</li>
+        </ol>
+
+        <!-- Tabla con combinación de celdas -->
+        <h3>Detalles de las Categorías</h3>
+        <table>
+            <tr>
+                <th>Categoría</th>
+                <th>Duración</th>
+                <th colspan="2">Nivel de Dificultad</th>
+            </tr>
+            <tr>
+                <td>GT3 Series</td>
+                <td>60 min</td>
+                <td>Avanzado</td>
+                <td>Alta Competitividad</td>
+            </tr>
+            <tr>
+                <td>GT4 Series</td>
+                <td>45 min</td>
+                <td>Intermedio</td>
+                <td>Moderado</td>
+            </tr>
+            <tr>
+                <td>Endurance Cup</td>
+                <td>6 horas</td>
+                <td>Experto</td>
+                <td>Resistencia Extrema</td>
+            </tr>
+            <tr>
+                <td rowspan="2">SimRacing</td>
+                <td>90 min</td>
+                <td>Avanzado</td>
+                <td>Alta Precisión</td>
+            </tr>
+            <tr>
+                <td>120 min</td>
+                <td>Profesional</td>
+                <td>Máxima Dedicación</td>
+            </tr>
+        </table>
+
+        <section class="map-area">
+            <h2>Circuitos Destacados en los Torneos</h2>
+            <!-- Mapa interactivo con hipervínculos -->
+            <img src="Imagenes/MapaInteractivo.png" usemap="#image-map" alt="Mapa de circuitos de Assetto Corsa">
+        
+            <map name="image-map">
+                <area target="_blank" alt="Laguna Seca" title="Laguna Seca" href="https://es.wikipedia.org/wiki/WeatherTech_Raceway_Laguna_Seca" coords="285,161,1,-1" shape="rect">
+                <area target="_blank" alt="Magione Autodrome" title="Magione Autodrome" href="https://es.wikipedia.org/wiki/Aut%C3%B3dromo_de_Magione" coords="288,160,571,1" shape="rect">
+                <area target="_blank" alt="Circuito de Magny Cours" title="Circuito de Magny Cours" href="https://es.wikipedia.org/wiki/Circuito_de_Nevers_Magny-Cours" coords="1,322,284,163" shape="rect">
+                <area target="_blank" alt="Autodromo Hermanos Rodriguez" title="Autodromo Hermanos Rodriguez" href="https://es.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez" coords="289,323,572,164" shape="rect">
+                <area target="_blank" alt="Monaco Circuit" title="Monaco Circuit" href="https://es.wikipedia.org/wiki/Circuito_de_M%C3%B3naco" coords="2,483,284,326" shape="rect">
+                <area target="_blank" alt="Autodromo Nazionale di Monza" title="Autodromo Nazionale di Monza" href="https://es.wikipedia.org/wiki/Autodromo_Nazionale_di_Monza" coords="288,482,572,325" shape="rect">
+            </map>
+        </section>        
+
+        <!-- Formulario de Registro -->
+        <h3>Regístrate para Competir</h3>
+        <form action="#" method="post">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="16" required>
+
+            <label for="experiencia">Experiencia en SimRacing (años):</label>
+            <input type="number" id="experiencia" name="experiencia" min="0" required>
+
+            <label for="juegos">¿Qué juegos de simulación has jugado?</label>
+            <select id="juegos" name="juegos">
+                <option value="Assetto Corsa">Assetto Corsa</option>
+                <option value="ACC">Assetto Corsa Competizione</option>
+                <option value="iRacing">iRacing</option>
+                <option value="Gran Turismo">Gran Turismo</option>
+            </select><br><br>
+
+            <label>Escucha este sonido de motor:</label>
+            <audio controls>
+                <source src="Imagenes/SonidoMotor.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+ 
+            <label for="tipo_motor">¿Qué tipo de motor es?</label>
+            <label><input type="radio" name="tipo_motor" value="v6"> Motor V6</label>
+            <label><input type="radio" name="tipo_motor" value="v8" required> Motor V8</label>
+            <label><input type="radio" name="tipo_motor" value="v10"> Motor V10</label>
+            <label><input type="radio" name="tipo_motor" value="v12"> Motor V12</label>
+            <label><input type="radio" name="tipo_motor" value="hibrido"> Motor Híbrido</label>
+            
+            <button type="submit">Enviar Registro</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Assetto Corsa Fanpage. Todos los derechos reservados.</p>
+        <p>Fanpage no oficial dedicada a la saga de Assetto Corsa.</p>
+        <p>Instagram: <a href="https://www.instagram.com/ferbeltran_ba21" target="_blank">@ferbeltran_ba21</a> | Tel: +52 5576080585</p>
+    </footer>
+</body>
+</html>
+

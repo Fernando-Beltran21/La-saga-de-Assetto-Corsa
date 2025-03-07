@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(rgba(255, 0, 0, 0.1), rgba(0, 10, 0, 0.8)), url('Imagenes/bannerACEVO.jpeg') no-repeat center/cover;
+    box-shadow: 0 0 15px #000000;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ff0000;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ff0000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff0000;
+}
+
+.info-box {
+    margin-bottom: 2rem;
+}
+
+.info-box h2 {
+    color: #ff0000;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.info-box p {
+    margin-bottom: 1rem;
+}
+
+
+.description-img {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+
+.game-section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: 1px solid #ff0000;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff0000;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.game-section:hover {
+    transform: scale(1.05);
+}
+
+.game-section img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.game-info h2 {
+    color: #ff0000;
+    margin: 0 0 0.5rem;
+}
+
+
+.steam-link {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.steam-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.steam-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #171a21;
+    border-radius: 80px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.steam-button img {
+    width: 90px;
+    margin-right: 10px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #aaa;
+}
+
+footer a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
